@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/admin_request.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="store">
+      <div class="wrapper">
+        <div id="icon" class="logo">E-Store</div>
+
+        <nav>
+          <i class="bx bx-menu nav_item"></i>
+        </nav>
+
+        <ul class="menu">
+          <li>
+            <a href="../index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="../store.html">Loja</a>
+          </li>
+          <li>
+            <a href="../user.html">Perfil</a>
+          </li>
+          <li>
+            <a href="./index.html">Dashboard</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="request-header">
+        <h2 class="caption">Compras</h2>
+      <div class="request-wrapper">
+        <input type="radio" name="tab" id="open" />
+        <input type="radio" name="tab" id="verified" checked />
+        <input type="radio" name="tab" id="payed" checked />
+        <div class="tab">
+          <label class="tab-item" for="open"
+            ><span>Abertas</span>
+            <span class="count" id="open-count">99+</span></label
+          >
+
+          <label class="tab-item" for="verified"
+            ><span>Verificadas</span>
+            <span class="count" id="verified-count">10</span></label
+          >
+
+          <label class="tab-item" for="payed"
+            ><span>Fechadas</span>
+            <span class="count" id="payed-count">10</span></label
+          >
+          <div class="tab-indicator"></div>
+        </div>
+
+        <div class="tab-content">
+            <div class="tb-open">
+                <div class="request-item">
+                    <div class="left">
+                      <div class="status">
+                        <span class="status-indicator"></span>
+                        Aberto
+                      </div>
+                      <div class="short-description">
+                        4 produtos
+                      </div>
+                    </div>
+                    <div class="price">
+                      347,000 Mzn
+                    </div>
+                </div>
+                <div class="empty verified">
+                    <span>Nenhuma Compra Aberta</span>
+                </div>
+            </div>
+
+            <div class="tb-verified">
+                <div class="request-item">
+                    <div class="left">
+                      <div class="status verificado">
+                        <span class="status-indicator"></span>
+                        Verificado
+                      </div>
+                      <div class="short-description">
+                        4 produtos
+                      </div>
+                    </div>
+                    <div class="price">
+                      347,000 Mzn
+                    </div>
+                </div>
+                <div class="empty verified">
+                    <span>Nenhuma Compra em Verificação</span>
+                </div>
+            </div>
+
+            <div class="tb-payed">
+                <div class="request-item">
+                    <div class="left">
+                      <div class="status pago">
+                        <span class="status-indicator"></span>
+                        Pago
+                      </div>
+                      <div class="short-description">
+                        4 produtos
+                      </div>
+                    </div>
+                    <div class="price">
+                      347,000 Mzn
+                    </div>
+                </div>
+                <div class="empty verified">
+                    <span>Nenhuma Compra Fechada</span>
+                </div>
+            </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="request-view">
+
+        <div class="request-view-content">
+          <div class="request-header">
+            <div class="date">20/05/2023 10:07</div>
+            <i class="bx bx-x"></i>
+          </div>
+          <div class="items">
+            <div class="item">
+              <div class="left">
+                <span class="name">Dell xps 13</span>  x <item-quantity>4</item-quantity>
+              </div> 
+              <div class="price">200,000 Mzn</div>
+            </div>
+  
+            <div class="item">
+              <div class="left">
+                <span class="name">Cnon EOS 6D</span>  x <item-quantity>2</item-quantity>
+              </div> 
+              <div class="price">120,000 Mzn</div>
+            </div>
+  
+            <div class="item">
+              <div class="left">
+                <span class="name">Dell xps 12</span>  x <item-quantity>4</item-quantity>
+              </div> 
+              <div class="price">200,000 Mzn</div>
+            </div>
+          </div>
+  
+          <div class="request-view-footer">
+            <button>Verificar</button>
+            <div class="total-price">320,000 Mzn</div>
+          </div>
+  
+        </div>
+  
+      </div>
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/admin_pedidos.js"></script>
+  </body>
+</html>

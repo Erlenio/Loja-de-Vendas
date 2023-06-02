@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - E-STORE</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    
+  </head>
+  <body>
+
+    <header class="store">
+      <div class="wrapper">
+        <div id="icon" class="logo">E-Store</div>
+
+        <nav>
+          <div class="nav-item user">
+            <i class="bx bx-user nav_item"></i>
+            <div class="user-details">
+              <div class="loged">
+                <i class="bx bx-pencil" id="edit-user"></i>
+                <div class="user-header">
+                  <img src="../images/camera.jpg" alt="" srcset="" />
+                </div>
+                <div class="user-body">
+                  <div class="username">Nome do usuario</div>
+                  <div class="email">Email</div>
+                </div>
+                <button class="logout">
+                  <i class="bx bx-log-out"></i> <span>Sair</span>
+                </button>
+              </div>
+              <div class="unloged">
+                <a href="../login.html">Logar</a>
+              </div>
+            </div>
+          </div>
+          <i class="bx bx-menu nav_item"></i>
+        </nav>
+
+        <ul class="menu">
+          <li>
+            <a href="../index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="../store.html">Loja</a>
+          </li>
+          <li>
+            <a href="../produtos.html">Produtos</a>
+          </li>
+          <li>
+            <a href="./pedidos.html">Pedidos</a>
+          </li>
+          <li>
+            <a href="./usuarios.html">Usuários</a>
+          </li>
+          <li>
+            <a href="../user.html">Perfil</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="admin-header">
+
+      <div class="overview">
+
+        <div class="box">
+
+          <div class="num" id="num-produtos">20</div>
+          <div class="text">Produtos</div>
+
+        </div>
+
+        <div class="box">
+
+          <div class="num" id="num-vendas">20</div>
+          <div class="text">Vendas</div>
+
+        </div>
+
+        <div class="box">
+
+          <div class="num" id="num-sell-value">2000 <span>Mzn</span></div>
+          <div class="text">Semanal</div>
+
+        </div>
+
+        <div class="box">
+
+          <div class="num" id="num-pedidos">50</div>
+          <div class="text">Pedidos</div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="last-sells">
+      <h2 class="caption">Utlimas 7 Vendas</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Cliente</th>
+            <th>Produtos</th>
+            <th>Preco</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+
+    </section>
+
+
+    <footer>
+      <div class="footer-wrap">
+        <div class="box box-001">
+          <h2 class="logo">E-Store</h2>
+
+          <p>Qualidade e Segurança</p>
+
+        </div>
+
+        <div class="box">
+          <h3>Conecte-se a Nós</h3>
+
+          <ul>
+            <li>
+              <a href="#"><i class="bx bxl-facebook"></i>Facebook</a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-instagram"></i>Instagram</a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-twitter"></i>Twitter</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>Ligações Rápidas</h3>
+
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="store.html">Loja</a>
+            </li>
+            <li>
+              <a href="#">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="copyright">&COPY; 2023 e-store</p>
+    </footer>
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/admin.js"></script>
+    
+  </body>
+</html>

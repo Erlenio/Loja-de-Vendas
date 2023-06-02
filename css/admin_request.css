@@ -1,0 +1,40 @@
+.request-wrapper{position: relative;}
+.tab .tab-indicator{
+    width: calc((100% / 3) - 13px);
+}
+
+input#open:checked ~ .tab label[for='open']{
+    background: transparent;
+    color: #fff;
+}
+
+input#verified:checked ~ .tab label[for='verified']{
+    background: transparent;
+    color: #fff;
+}
+
+input#payed:checked ~ .tab label[for='payed']{
+    background: transparent;
+    color: #fff;
+}
+
+.tb-open,
+.tb-payed,
+.tb-verified{
+    display: none;
+    position: relative;
+}
+
+input#open:checked ~ .tab-content .tb-open,
+input#payed:checked ~ .tab-content .tb-payed,
+input#verified:checked ~ .tab-content .tb-verified{
+    display: block;
+}
+
+input#verified:checked ~ .tab .tab-indicator{
+    left: calc((100%/3) + 7px);
+}
+
+input#payed:checked ~ .tab .tab-indicator{
+    left: calc((100%/3) + (100%/3) + 13px);
+}

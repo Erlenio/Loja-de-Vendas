@@ -1,0 +1,54 @@
+/**=====Admin/Dashboard=======**/
+
+.overview{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 100%;
+    position: relative;
+    gap: 15px;
+    
+}
+
+.overview .box{
+    border: 1px solid #eee;
+    padding: 40px 25px;
+    background: var(--light-color);
+    text-align: center;
+}
+
+.overview .box .num{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #29e;
+}
+
+.overview .box .num span{
+    font-size: 16px;
+}
+
+.overview .box .text{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+h2.caption{
+    margin-bottom: 30px;
+    color: #29e;
+    font-weight: bold;
+}
+
+.last-sells{ min-height: 35vh;}
+
+.last-sells table{
+    width: 100%;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+.last-sells table th,
+.last-sells table tr td{
+    border: 1px solid #6666;
+    color: #666;
+    padding: 8px 4px;
+}
